@@ -1,0 +1,7 @@
+===============================
+// build wolfSSL to support DTLS and JNI
+
+./autogen.sh  # Only needed if building from a git clone
+./configure --enable-dtls --enable-dtls13 --enable-jni
+make
+sudo make install
